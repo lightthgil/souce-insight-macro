@@ -2610,7 +2610,7 @@ macro InsertFileHeaderEN(hbuf, ln,szName,szContent)
     closebuf(hnewbuf)        /* 关闭临时开辟的 file buffer */
     InsBufLine(hbuf, ln + 0,  "/*************************************************************************************************************")
     InsBufLine(hbuf, ln + 1,  "")
-    InsBufLine(hbuf, ln + 2,  " **** Copyright (C), @szYear@, Broadband Product Division, Fiberhome Telecommunication Technologies Co., Ltd. ****")
+    InsBufLine(hbuf, ln + 2,  " **** Copyright (C), @szYear@-2100, Broadband Product Division, Fiberhome Telecommunication Technologies Co., Ltd. ****")
     InsBufLine(hbuf, ln + 3,  "")
     InsBufLine(hbuf, ln + 4,  " *************************************************************************************************************")
     sz = GetFileName(GetBufName (hbuf))
@@ -2770,7 +2770,7 @@ macro InsertFileHeaderCN(hbuf, ln,szName,szContent)
     nlnDesc = ln
     szTmp = " * 文件描述   : "
     InsBufLine(hbuf, ln + 6, " * 文件描述   : @szContent@")
-    InsBufLine(hbuf, ln + 7, " * 版权说明   : Copyright (C) 2000-@szYear@   烽火通信科技股份有限公司")
+    InsBufLine(hbuf, ln + 7, " * 版权说明   : Copyright (C) @szYear@-2100   烽火通信科技股份有限公司")
     InsBufLine(hbuf, ln + 8, " * 其    他   : ")
     InsBufLine(hbuf, ln + 9, " * 修改日志   : ")
     InsBufLine(hbuf, ln + 10, "")
